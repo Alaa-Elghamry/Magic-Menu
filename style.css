@@ -105,3 +105,19 @@ body {
   border-top-left-radius: 20px;
   box-shadow: 0 -10px 0 0 var(--clr);
 }
+/* when the icon clicked (active) move the indicator alon X */
+.nav ul li:nth-child(1).active ~ .indicator {
+  transform: translateX(calc(70px * 0));
+}
+.nav ul li:nth-child(2).active ~ .indicator {
+  transform: translateX(calc(70px * 1));
+}
+.nav ul li:nth-child(3).active ~ .indicator {
+  transform: translateX(calc(70px * 2));
+}
+.nav ul li:nth-child(4).active ~ .indicator {
+  transform: translateX(calc(70px * 3));
+}
+.nav ul li:nth-child(5).active ~ .indicator {
+  transform: translateX(calc(70px * 4));
+}
