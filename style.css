@@ -6,3 +6,32 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+:root {
+  --clr: #222327;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--clr);
+}
+.nav {
+  width: 400px;
+  height: 70px;
+  background: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.nav ul {
+  display: flex;
+  width: 350px;
+}
+.nav ul li {
+  position: relative;
+  list-style: none;
+}
