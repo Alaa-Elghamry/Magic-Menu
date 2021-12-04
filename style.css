@@ -57,8 +57,8 @@ body {
   color: var(--clr);
   transition: 0.5s;
 }
-.nav ul li:hover a .icon {
-  transform: translateY(-35px);
+.nav ul li.active a .icon {
+  transform: translateY(-32px);
 }
 .nav ul li a .text {
   position: absolute;
@@ -69,7 +69,39 @@ body {
   transition: 00.5s;
   opacity: 0;
 }
-.nav ul li:hover a .text {
+.nav ul li.active a .text {
   opacity: 1;
   transform: translateY(10px);
+}
+.indicator {
+  position: absolute;
+  top: -50%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 5px solid var(--clr);
+  background: #f48982;
+  transition: 00.5s;
+}
+.indicator::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  left: -22px;
+  background: transparent;
+  border-top-right-radius: 20px;
+  box-shadow: 0 -10px 0 0 var(--clr);
+}
+.indicator::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  right: -22px;
+  background: transparent;
+  border-top-left-radius: 20px;
+  box-shadow: 0 -10px 0 0 var(--clr);
 }
